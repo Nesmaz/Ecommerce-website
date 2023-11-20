@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARMONY</title>
+    <link rel="icon" type="image/x-icon" href="/media/guitar.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,300;1,400;1,500;1,600;1,700&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-------Nav bar-------->
+
+    <nav>
+        <div class="logo">
+            <h2>HARMONY</h2>
+        </div>
+        <div>
+            <ul id="menu">
+                <i id="close" class="fa-solid fa-xmark"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>
+            </ul>
+        </div>
+        <div class="slide">
+            <a id="crt" href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+            <a><i id="bars" class="fa-solid fa-bars fa-xl"></i></a>
+        </div>
+    </nav>
+
+<!-------Header Section-------->
+
+<section>
+        <div class="header">
+            <h2>Cart</h2>
+            <p>Harmony since 1992</p>
+        </div>
+</section>
+
+<!-------Cart Sections-------->
+
+<section id="cart">
+    <!-- <div id="cart"> -->
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <div>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="/media/products/two/L85758000001000-00-500x500.png" alt="product img" width="80" height="80">
+                            <div class="pro-info">
+                                <p>Electric Guitar Mariana Blue</p>
+                                <small id="price">$999.99</small>
+                                <br>
+                                <button id="remove" onclick="removeFromCart()">remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="quantity" type="number" value="1">
+                    </td>
+                    <td id="prosub">$999.99</td>
+                </tr>
+            </div>
+        </table>
+</section>
+
+<section id="payment">
+    <div class="coupon">
+        <h3>Add Coupon</h3>
+        <input type="text" placeholder="Enter your coupon">
+        <button>Apply</button>
+    </div>
+
+    <div class="total">
+        <h3>Total</h3>
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td id="sub">$999.99</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+            <tr id="last">
+                <td><strong>Total</strong> </td>
+                <td id="total">$999.99</td>
+            </tr>
+        </table>
+        <button>Proceed to checkout</button>
+    </div>
+</section>
+
+
+<!-- <template id="empty-card">
+    <p>
+        Cart is empty :(
+    </p>
+    <p>
+        Add your favourite instrument
+    </p>
+    <p>
+        Let the joy of music & Harmony in your life!
+    </p>
+    <img src="/media/Fender-Custom-Shop-Hot-Wheels.jpeg">
+</template> -->
+
+<!---------Sign Up---------->
+
+    <section class="sign">
+        <div class="text">
+            <h4 class="">Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest offers</p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="EMAIL" name="email">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+<!---------Footer---------->
+
+
+<footer>
+    <div class="container">
+        <div class="col">
+            <div class="logo">
+                <h2>HARMONY</h2>
+                <h4 class="pf">Contact</h4>
+                <p><strong>Phone:</strong> +01 7777 999</p>
+                <p><strong>Hours:</strong> 10:00 - 20:00, sun - thur</p>
+                <p><strong>Address:</strong> 2137 Gordon Street, Irvine, CA</p>
+                <h4 class="pf">Follow Us</h4>
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4 class="pf">About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+
+        <div class="col">
+            <h4 class="pf">My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+
+        </div>
+
+
+        <div class="col">
+            <h4 class="pf">Install App</h4>
+            <p>Available on Google Play and App Store</p>
+            <div class="row">
+                <img id="g" src="/media/1_nZu0dsnlCQltPT1QMCHFAA.png" alt="download icon">
+                <img src="/media/1_xqT83bMEz92IBYxS9UQNow.webp" alt="download icon">
+            </div>
+            <p>Payment Methods</p>
+            <div class="pay">
+                <img src="/media//payment/card.png" alt="payment method icon">
+                <img src="/media/payment/visa.png" alt="payment method icon">
+                <img src="/media/payment/paypal.png" alt="payment method icon">
+            </div>
+        </div>
+    </div>
+    <div id="copy">
+        <p>© 2023 Harmony.com. Made by Nesma Abdel-azeem</p>
+    </div>
+
+</footer>
+
+    <script src="https://kit.fontawesome.com/8230e1157a.js"></script>
+    <script src="/source/main.js"></script>
+    <script src="/source/cart.js"></script>
+</body>
+</html>
